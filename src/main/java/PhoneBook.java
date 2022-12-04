@@ -9,6 +9,14 @@ public class PhoneBook {
     }
 
     public String findByNumber(String number) {
-        return null;
+        String key = "";
+        for (String k : book.keySet()) {
+            if (book.get(k).equals(number)) {
+                key = k;
+                break;
+            }
+        }
+        return key;
     }
+    
 }
