@@ -26,4 +26,17 @@ public class PhoneBookTest {
         String actual = phoneBook.findByName("test");
         assertEquals(expected, actual);
     }
+
+    @Test
+    void TestPrintAllNames() {
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Btest", "123");
+        phoneBook.add("Atest", "456");
+        phoneBook.add("Ctest", "789");
+
+        String expected = "[Atest, Btest, Ctest]";
+        String actual = phoneBook.printAllNames();
+
+        assertEquals(expected, actual);
+    }
 }
