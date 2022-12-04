@@ -25,7 +25,7 @@ public class PhoneBook {
     }
 
     public String printAllNames() {
-        return null;
+        return book.keySet().toString();
     }
 
 }
