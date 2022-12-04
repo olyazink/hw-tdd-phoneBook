@@ -3,6 +3,7 @@ import java.util.TreeMap;
 
 public class PhoneBook {
     Map<String, String> book = new TreeMap<>();
+
     public int add(String name, String number) {
         book.put(name, number);
         return book.size();
@@ -18,5 +19,8 @@ public class PhoneBook {
         }
         return key;
     }
-    
+
+    public String findByName(String name) {
+        return null;
+    }
 }
