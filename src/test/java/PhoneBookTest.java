@@ -9,4 +9,12 @@ public class PhoneBookTest {
         int actual = phoneBook.add("test", "123");
         assertEquals(expected, actual);
     }
+    @Test
+    void testFindByNumber() {
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("test", "123");
+        String expected = "test";
+        String actual = phoneBook.findByNumber("123");
+        assertEquals(expected, actual);
+    }
 }
